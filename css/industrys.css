@@ -1,0 +1,176 @@
+/* Add your custom CSS styles here */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    /* Vertically align content */
+}
+
+.image {
+    flex: 1;
+    /* Occupy 50% of the container width */
+    padding: 20px;
+    /* Add space around the image */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+    flex: 1;
+    /* Occupy 50% of the container width */
+    padding: 20px;
+    /* Add space around the text */
+}
+
+.text h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #B8860B;
+    font-weight: 900;
+}
+
+.text p {
+    font-size: 16px;
+    background-color: black;
+    color: #B8860B;
+    font-weight: bold;
+}
+
+.tcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tcontent {
+    display: flex;
+    align-items: center;
+    /* Vertically align content */
+}
+
+.timage {
+    flex: 1;
+    /* Occupy 50% of the container width */
+    padding: 20px;
+    /* Add space around the image */
+}
+
+.timage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ttext {
+    flex: 1;
+    /* Occupy 50% of the container width */
+    padding: 20px;
+    /* Add space around the text */
+}
+
+.ttext h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #B8860B;
+    font-weight: bold;
+}
+
+.ttext p {
+    font-size: 14px;
+    color: black;
+    font-weight: strong;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+}
+
+.itcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: 100%;
+    border: 4px solid #252525;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Add your custom CSS styles here */
+
+.btcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* .btcontent {
+    display: flex;
+    align-items: center;
+} */
+
+.btimage {
+    width: 100px;
+    /* Define a fixed width for the square image */
+    height: 100px;
+    /* Define a fixed height for the square image */
+    margin-right: 20px;
+    /* Space between the image and text */
+    overflow: hidden;
+    /* Hide any overflow from the image */
+    flex-shrink: 0;
+    /* Prevent the image from shrinking */
+}
+
+.btimage img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bttext {
+    flex: 1;
+}
+
+.toptext {
+    font-size: 20px;
+    color: black;
+    font-weight: strong;
+    margin: 0;
+}
+
+.toptext h1 {
+    font-size: 24px;
+    color: black;
+    font-weight: 900;
+    margin: 0;
+}
+
+h2 {
+    font-size: 18px;
+    color: #B8860B;
+    font-weight: bold;
+    margin: 0;
+}
+
+.toptext p {
+    font-size: 16px;
+    font-weight: strong;
+    color: black;
+}

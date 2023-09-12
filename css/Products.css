@@ -1,0 +1,237 @@
+/* Custom CSS for the card */
+
+.custom-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.281);
+    background-color: #ffffff;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.custom-card .card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.custom-card .card-text {
+    color: #666;
+}
+
+.card-img-top {
+    width: 150px;
+    /* Adjust to your preferred width */
+    height: 200px;
+    /* Adjust to your preferred height */
+    /* Maintain aspect ratio and cover the container */
+}
+
+.custom-card .btn {
+    background-color: #c09207;
+    ;
+    color: #fff;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.custom-card .btn:hover {
+    background-color: transparent;
+    color: #c09207;
+    ;
+    border: solid 2px black;
+}
+
+.card-img-top {
+    /* Adjust the maximum height as needed */
+    /* Maintain aspect ratio and cover the container */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 254px;
+}
+
+.products_details {
+    padding-top: 56px;
+}
+
+.my-4 {
+    text-align: center;
+}
+
+
+/* Custom CSS for product filter */
+
+#filterContainer {
+    background-color: #000000;
+    /* border: 1px solid #ced4da; */
+    color: white;
+    position: sticky;
+    top: 153px;
+    right: 3px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoryFilter {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+}
+
+select {
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+}
+
+
+/* Media query for screens with a maximum width of 600px (typical for mobile devices) */
+
+@media (max-width: 600px) {
+    label {
+        font-size: 14px;
+    }
+    select {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    #filterContainer {
+        background-color: #000000;
+        color: white;
+        position: sticky;
+        top: 118px;
+        right: 3px;
+        z-index: 100;
+    }
+    .products_details {
+        padding-top: 57px;
+    }
+    .my-4 {
+        text-align: center;
+    }
+}
+
+.form-label {
+    font-weight: bold;
+    /* Bold label text */
+    margin-bottom: 5px;
+    /* Margin below the label */
+}
+
+
+/* Style for the select element and its options */
+
+.custom-select {
+    margin-top: 10px;
+    /* Adjust the margin to create space between header and select */
+    position: relative;
+    /* Ensure stacking context for z-index */
+    z-index: 3;
+    /* Set a higher z-index value to place it above the header */
+    width: 100%;
+    /* Make the select element full-width */
+    background-color: #ffffff;
+    /* Background color for the select element */
+    border: 1px solid #ccc;
+    /* Border for the select element */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 8px;
+    /* Spacing inside the select element */
+    font-size: 16px;
+    /* Font size */
+    color: #000000;
+    /* Text color */
+}
+
+.custom-select:focus {
+    border-color: #c09207;
+    ;
+    /* Change border color on focus */
+    box-shadow: 0 0 0 0.25rem rgba(255, 196, 0, 0.356);
+    /* Add a subtle shadow on focus */
+}
+
+.custom-option {
+    /* Custom styles for select options if needed */
+    font-size: 14px;
+    /* Font size for options */
+    color: #ffffff;
+    background-color: #000000;
+    /* Text color for options */
+}
+
+
+/* Hover effect for select options */
+
+.custom-option:hover {
+    /* Background color on hover */
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    /* Text color on hover */
+}
+
+
+/* Hover effect for the select element */
+
+.custom-select:hover {
+    border-color: #c09207;
+    color: black;
+    /* Change border color on hover */
+}
+
+.custom-select:focus {
+    border-color: #c09207;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0, 123, 255);
+}
+
+
+/* Focus effect for the select element */
+
+.custom-select:focus {
+    border-color: #c09207;
+    ;
+    /* Change border color on focus */
+    box-shadow: 0 0 0 0.25rem rgba(255, 145, 0, 0.507);
+    /* Add a subtle shadow on focus */
+}
+
+
+/* .title {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    width: 100%;
+    height: 100px;
+} */
+
+
+/* .categoryFilter {
+    background-color: #000000;
+    color: #fff;
+    border-top: 5px solid #c09207;;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 10px #c09207;;
+} */

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)file:///C:/Product/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./Product_files/style.css">
+    <link href="./Product_files/bootstrap.min.css" rel="stylesheet">
+    <script src="./Product_files/popper.min.js.download"></script>
+    <script src="./Product_files/bootstrap.min.js.download"></script>
+    <script src="./Product_files/jquery-3.6.0.min.js.download"></script>
+    <link rel="stylesheet" href="./Product_files/bootstrap.min(1).css">
+    <script src="./Product_files/jquery.min.js.download"></script>
+    <script src="./Product_files/popper.min.js(1).download"></script>
+    <script src="./Product_files/bootstrap.min.js(1).download"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+    <!-- Filter goes here -->
+    <div class="col-lg-6 col-md-6 col-12">
+        <div class="d-flex flex-column align-items-end">
+            <div id="filterContainer">
+                <label for="categoryFilter" class="form-label">Filter By...</label>
+                <select id="categoryFilter" class="form-select">
+                    <option value="all" class="custom-option"> All Products</option>
+                    <option value="category1" class="custom-option">PP Bags</option>
+                    <option value="category2" class="custom-option">HDPE Bags</option>
+                    <option value="category3" class="custom-option">Woven Sacks</option>
+                    <option value="category4" class="custom-option">PP Roll</option>
+                    <option value="category5" class="custom-option">HDPE Roll</option>
+                    <option value="category6" class="custom-option">PP Woven Bags</option>
+                    <option value="category7" class="custom-option">White Woven Bags</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#categoryFilter").change(function () {
+                var selectedCategory = $(this).val();
+
+                // Hide all cards
+                $(".card").hide();
+
+                if (selectedCategory === "all") {
+                    // Show all cards if "All Categories" is selected
+                    $(".card").show();
+                } else {
+                    // Show cards with matching data-category attribute
+                    $(".card[data-category='" + selectedCategory + "']").show();
+                }
+            });
+        });
+
+
+    </script>
+
+
+    <section id="products">
+        <div class="container m-5">
+            <h1 class="text-center my-4 custom-title">PRODUCT COLLECTIONS</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category1" style="">
+                        <img src="./Product_files/pp-chemical-bag-500x500.webp" class="card-img-top" data-category="category1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category1">PP Chemical Bag</h5>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category1">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category1" style="">
+                        <img src="./Product_files/pp-fertilizer-bag-500x500.webp" class="card-img-top" data-category="category1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category1">PP Fertilizer Bag</h5>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category1">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category1" style="">
+                        <img src="./Product_files/PP bag.webp" class=" card-img-top" data-category="category1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category1">PP Woven Bag</h5>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category1">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category7" style="">
+                        <img src="./Product_files/img2.png" class="card-img-top" data-category="category7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category7">Woven Bag</h5>
+                            <h6>Size : 15 inch x 16 inch</h6>
+                            <h6>Weight:32g</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category7">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category7" style="">
+                        <img src="./Product_files/img3.png" class="card-img-top" data-category="category7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category7">Woven Bag</h5>
+                            <h6>Size : 12 inch x 16 inch</h6>
+                            <h6>Weight:0.11g</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category7">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category7" style="">
+                        <img src="./Product_files/img8.jpg" class="card-img-top" data-category="category7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category7">Woven Natural White </h5>
+                            <h6>Size: 20 inch x 33 inch</h6>
+                            <h6>Weight : 0.68g</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category7">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category7" style="">
+                        <img src="./Product_files/img4.png" class="card-img-top" data-category="category7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category7">Woven Bag</h5>
+                            <h6>Size : 24 Inch x 40 Inch</h6>
+                            <h6>Weight: 93g</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category7">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category7" style="">
+                        <img src="./Product_files/img5.png" class="card-img-top" data-category="category7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category7">Woven Bag</h5>
+                            <h6>Size : 15 Inch x 16 Inch</h6>
+                            <h6>Weight : 32g</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category7">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category7" style="">
+                        <img src="./Product_files/img9.jpg" class="card-img-top" data-category="category7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category7">Woven Bag</h5>
+                            <h6>Size : 24 Inch x 36 Inch</h6>
+                            <h6>Weight : 0.88g</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category7">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category2" style="">
+                        <img src="./Product_files/hdpe product-500x500.webp" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category2">HDPE Rice Bag</h5>
+                            <h6>Size : 2 x 4 Feet</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category2" style="">
+                        <img src="./Product_files/hdpe-woven-bag-500x500.webp" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category2">HDPE Woven Carry Bag</h5>
+                            <h6>Size : 8 Inch x 12 Inch</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category2" style="">
+                        <img src="./Product_files/hdpe-woven-flour-bag-500x500.jpg" class="card-img-top" data-category="category2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category2">HDPE Woven Flour Bag</h5>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category2">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category1" style="">
+                        <img src="./Product_files/leno-mesh-bag-500x500.webp" class="card-img-top" data-category="category1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category1">Leno Fabric Mesh Bag</h5>
+                            <h6>Size : 2 Feet x 4 Feet</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category1">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category1" style="">
+                        <img src="./Product_files/pp-woven-bags-500x500.webp" data-category="category1" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category1">PP Woven Printed Bag</h5>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category1">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category1" style="">
+                        <img src="./Product_files/pp-rice-bag-500x500.webp" class=" card-img-top" data-category="category1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category1">PP Woven Rice Bag</h5>
+                            <h6>Size: 6 inch x 10 inch</h6>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category1">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" data-category="category1" style="">
+                            <img src="./Product_files/pp-woven-bag-500x500.webp" class=" card-img-top" data-category="category1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" data-category="category1">PP 15Kg Woven Bag</h5>
+                                <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category1">Add to
+                                    Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" data-category="category2" style="">
+                            <img src="./Product_files/hdpe-laminated-chemical-bag-500x500.webp" class="card-img-top" data-category="category2">
+                            <div class="card-body text-center" data-category="category2">
+                                <h5 class="card-title" data-category="category2">HDPE Laminated Chemical Bag</h5>
+                                <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category2">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" data-category="category2" style="">
+                            <img src="./Product_files/hdpe-printed-bag-500x500.webp" class="card-img-top" data-category="category2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" data-category="category2">HDPE Printed Bag</h5>
+                                <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category2">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" data-category="category3" style="">
+                            <img src="./Product_files/pp-woven-rice-sack.webp" class="card-img-top" data-category="category3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" data-category="category3">PP Woven Rice Sack</h5>
+                                <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category3">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" data-category="category3" style="">
+                            <img src="./Product_files/printed-woven-sack.webp" class=" card-img-top" data-category="category3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" data-category="category3">Printed Woven Sack</h5>
+                                <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category3">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" data-category="category3" style="">
+                            <img src="./Product_files/laminated-woven-sack.webp" class="card-img-top" data-category="category3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" data-category="category3">Laminated Woven Sack</h5>
+                                <h6>Size: 16 inch x 22 inch</h6>
+                                <h6>Weight:42g</h6>
+                                <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category3">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" data-category="category5" style="">
+                            <img src="./Product_files/plain-hdpe-roll.webp" class=" card-img-top" data-category="category5">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" data-category="category5">Plain HDPE Roll</h5>
+                                <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category5">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" data-category="category6" style="">
+                            <img src="./Product_files/pp-laminated-woven-bag.webp" class=" card-img-top" data-category="category6">
+                            <div class="card-body text-center">
+                                <h5 class="card-title" data-category="category6">PP Laminated Woven Bag</h5>
+                                <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category6">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="card" data-category="category7" style="">
+                            <img src="./Product_files/img7.png" class="card-img-top">
+                            <div class="card-body text-center" data-category="category7">
+                                <h5 class="card-title" data-category="category7">Woven Bag</h5>
+                                <h6>Size: 16 inch x 22 inch</h6>
+                                <h6>Weight:42g</h6>
+                                <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category7">Add toCart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category4" style="">
+                        <img src="./Product_files/pp-woven-roll.webp" class=" card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category4">PP Woven Roll</h5>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category4">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category4" style="">
+                        <img src="./Product_files/plain-pp-woven-roll.webp" class=" card-img-top" data-category="category4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category4">Plain PP Woven Roll</h5>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category4">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="card" data-category="category4" style="">
+                        <img src="./Product_files/white-pp-woven-roll-500x500.webp" class="card-img-top" data-category="category4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title" data-category="category4">White PP Woven Roll </h5>
+                            <a href="file:///C:/Product/index.html#" class="btn custom-button-style" data-category="category4">Add to
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+</body></html>
